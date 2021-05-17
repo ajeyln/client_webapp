@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz - Website</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="innerdiv">
+            <h2 class="question"> Questions </h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="answer1" class="answers">
+                    <label for="answer1" id="option1"> Answers </label>
+                </li>                
+                <li>
+                    <input type="radio" name="answer" id="answer2" class="answers">
+                    <label for="answer2" id="option2"> Answers </label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="answer3" class="answers">
+                    <label for="answer3" id="option3"> Answers </label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="answer4" class="answers">
+                    <label for="answer4" id="option4"> Answers </label>
+                </li>
+            </ul>
+            <button id="submit">Submit</button>
+            <div id="showscore" class="scorearea"></div:showscore>
+        </div>
+    </div>
+    <script src=./quizscript.js></script>
+</body>
