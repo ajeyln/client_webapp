@@ -27,13 +27,13 @@ html{
 }
 
 .innerdiv h2{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 400;
     margin-top: 1.5rem
 }
 
 .innerdiv li{
-    font-size: 2rem;;
+    font-size: 1.5rem;;
     margin-top: 1.5rem;
     list-style: none;
 }
@@ -46,7 +46,7 @@ input {
 .btn{
     padding: 1rem 3rem;
     outline: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: block;
     margin: auto;
     border: none;
@@ -58,4 +58,15 @@ input {
 
 #submit:hover{
     background-color: blue;
+}
+
+#showscore {
+    background-color: #dfe6e9;
+    margin-top: 3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgb(248, 5, 78);
+}
+
+.scorearea {
+    display: none;
 }
