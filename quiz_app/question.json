@@ -1,71 +1,31 @@
 question_set =[{
-                "Question": "Q1. India is a federal union comprising twenty-nine states and how many union territories?",
-                "a": "6",
-                "b": "7",
-                "c": "8",
-                "d": "9",
-                "ans": "answer4",
-            }, {
-                "Question": "Q2. Which of the following is the capital of Arunachal Pradesh?",
-                "a": "Itanagar",
-                "b": "Dispur",
-                "c": "Imphal",
-                "d": "Panaji",
-                "ans": "answer1",
-            },{
-                "Question": "Q3. What are the major languages spoken in Andhra Pradesh?",
-                "a": "English and Telugu",
-                "b": "Telugu and Urdu",
-                "c": "Telugu and Kannada",
-                "d": "All of the above languages",
-                "ans": "answer2",
-            },{
-                "Question": "Q4. What is the state flower of Haryana?",
-                "a": "Lotus",
-                "b": "Rhododendron",
-                "c": "Golden Shower",
-                "d": "Not declared",
-                "ans": "answer1",
-            }, {
-                "Question": "Q5. Which of the following states is not located in the North?",
-                "a": "Jharkhand",
-                "b": "Jammu and Kashmir",
-                "c": "Himachal Pradesh",
-                "d": "Haryana",
-                "ans": "answer1",
-            }, {
-                "Question": "Q6. In which state is the main language Khasi?",
-                "a": "Mizoram",
-                "b": "Nagaland",
-                "c": "Meghalaya",
-                "d": "Tripura",
-                "ans": "answer3",
-            }, {
-                "Question": "Q7. Which is the largest coffee producing state of India?",
-                "a": "Kerala",
-                "b": "Tamil Nadu",
-                "c": "Karnataka",
-                "d": "Arunachal Pradesh",
-                "ans": "answer3",
-            }, {
-                "Question": "Q8. Which state has the largest area?",
-                "a": "Maharashtra",
-                "b": "Madhya Pradesh",
-                "c": "Uttar Pradesh",
-                "d": "Rajasthan",
-                "ans": "answer4",
-            }, {
-                "Question": "Q9. Which state has the largest population?",
-                "a": "Uttar Pradesh",
-                "b": "Maharastra",
-                "c": "Bihar",
-                "d": "West Bengal",
-                "ans": "answer1",
-            }, {
-                "Question": "Q10. In what state is the Elephant Falls located?",
-                "a": "Mizoram",
-                "b": "Orissa",
-                "c": "Manipur",
-                "d": "Meghalaya",
-                "ans": "answer4",
-            }, ]
+                    "question": "India is a federal union comprising twenty-nine states and how many union territories?",
+                    "options" : ["9","6", "7", "8"],
+                }, {
+                    "question": "Which of the following is the capital of Arunachal Prade",
+                    "options" : ["Itanagar", "Dispur", "Imphal", "Panaji"],
+                },{
+                    "question": "What are the major languages spoken in Andhra Pradesh?",
+                    "options" : ["Telugu and Urdu","English and Telugu", "Telugu and Kannada", "All of the above languages"],
+                },{
+                    "question": "What is the state flower of Haryana?",
+                    "options" : ["Lotus", "Rhododendron", "Golden Shower", "Not declared"],
+                }, {
+                    "question": "Which of the following states is not located in the North?",
+                    "options" : ["Jharkhand", "Jammu and Kashmir", "Himachal Pradesh", "Haryana"],
+                }, {
+                    "question": "In which state is the main language Khasi?",
+                    "options" : ["Meghalaya","Mizoram", "Nagaland", "Tripura"],
+                }, {
+                    "question": "Which is the largest coffee producing state of India?",
+                    "options" : ["Karnataka", "Kerala", "Tamil Nadu", "Arunachal Pradesh"],
+                }, {
+                    "question": "Which state has the largest area?",
+                    "options" : ["Rajasthan", "Uttar Pradesh", "Maharashtra", "Madhya Pradesh"],
+                }, {
+                    "question": "Which state has the largest population?",
+                    "options" : ["Uttar Pradesh", "Maharastra", "Bihar" ,"Rajasthan" ],
+                }, {
+                    "question": "In what state is the Elephant Falls located?",
+                    "options" : ["Meghalaya", "Mizoram", "Orissa", "Manipur"],
+                }, ]
