@@ -1,11 +1,16 @@
 const questionNumber = document.querySelector(".question-number")
 const questionText = document.querySelector(".question-text")
 const optioncontainer = document.querySelector(".option-container")
+const quizBox = document.querySelector(".quiz-box");
+const resultBox = document.querySelector(".result-box");
+const nextbtn = document.querySelector(".next-question-btn");
+
 
 let questionCounter = 0;
 let currentQuestion;
 let availableQuestions = [];
 let availableOptions = [];
+let correctAnswers = 0;
 
 function setAvailableQuestions(){
     const totalQuestion = question_set.length;
@@ -47,6 +52,8 @@ function getResult(element){
     const id = parseInt(element.id);
     if(id === 0){
         element.classList.add("correct");
+        correctAnswers++;
+        console.log(correctAnswers);
     }else{
         element.classList.add("wrong");
         const optionLen = optioncontainer.children.length;
@@ -58,6 +65,7 @@ function getResult(element){
     }
     unclickableOptions();
 }
+console.log(correctAnswers)
 
 function unclickableOptions(){
     const optionLen = optioncontainer.children.length;
@@ -66,25 +74,30 @@ function unclickableOptions(){
     }
 }
 
-submit.addEventListener("click", () => {
-    const id = parseInt(element.id);
-    if(id === 0){
-        element.classList.add("correct");
-        score++;
-    };
-    questioncount++;
-    if(questioncount < questionSets.length){
-        loadQuestion();
-    }else{
-        showscore.innerHTML = `
-        <h3> you scored is ${score} out of ${questionSets.length} </h3>
-        <button class="btn" onclick="location.reload()"> Play Again? </button>
-        `;
-        showscore.classList.remove("scorearea")
+function next(){
+    if(questionCounter === question_set.length){
+        console.log("quiz Over");
+        quizOver();
     }
-});
+    else{
+        getNewQuestion(); 
+    }
+}
+
+function quizOver(){
+    quizBox.classList.add("hide");
+    resultBox.classList.remove("hide");
+    quizResult();
+}
+
+function quizResult(){
+    nextbtn.classList.add("hide");
+    resultBox.querySelector(".Score").innerHTML = correctAnswers + " Out of " + question_set.length;
+}
 
 window.onload = function(){
+    quizBox.classList.remove("hide");
     setAvailableQuestions();
     getNewQuestion();
+    answerindicator();
 }
